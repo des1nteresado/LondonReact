@@ -4,7 +4,9 @@ class Form extends React.Component {
     render() {
         return (
             <form onSubmit={this.props.method}>
-            <button>Get</button>
+            <input type="text" name="from" placeholder="From"/>
+            <input type="text" name="to" placeholder="To"/>
+            <input type="submit" value="Get"/>
             </form>
         );
     }
