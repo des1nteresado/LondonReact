@@ -7,9 +7,8 @@ class Form extends React.Component {
                 Hello
                 It's React app..
                 <form onSubmit={this.props.method}>
-                    <input type="text" name="from" placeholder="From"/>
-                    <input type="text" name="to" placeholder="To"/>
-                    <input type="submit" value="Get"/>
+                    <input type="text" name="name" placeholder="Name"/>
+                    <input type="submit" value="Search"/>
                 </form>
             </div>
         );
