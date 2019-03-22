@@ -1,5 +1,6 @@
-import React,{PureComponent} from "react"
-import Map from "./CMap"
+import React,{PureComponent} from "react";
+import Map from "./CMap";
+import './Points.css';
 
 class App extends PureComponent {
     render() {

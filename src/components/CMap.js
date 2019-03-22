@@ -3,6 +3,7 @@ import React, {
 } from 'react';
 import Form from "./Form";
 import Points from "./Points";
+import "./Points.css"
 
 const KEY = "8649c28fd1c022b422953dbe41ca95c1";
 const ID = "f07614c5";
@@ -29,7 +30,8 @@ class CMap extends Component {
   }
   render() {
     return ( 
-      <div>
+      <div className="content">
+        <p>Searcher of Bike Station's</p>
         <Form method = { this.getInfo } />  
         <Points points = { this.state.Point } /> 
       </div>
