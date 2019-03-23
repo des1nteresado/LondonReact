@@ -9,18 +9,68 @@
     padding-top: 20px;
 }
 
+.formText {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.button {
+    background-color: rgb(45, 48, 57); 
+    color: white;
+    margin-left: 5px;
+    width: 70px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.Description {
+    margin: 10px;
+    width: 30%;
+}
+
+.Description div {
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.Flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .content p {
     font-size: 32px;
     text-align: center; 
 
 }
 
+.Map {
+    padding: 10px;
+}
+
+.Map ymaps {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .Form {
     margin: 20px auto;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    font-style: 16px;
 }
 
-.Form form input {
-    width: 360px;
+.Form form input:nth-child(1)  {
+    width: 525px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background-color: #fff;
 }

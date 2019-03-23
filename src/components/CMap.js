@@ -31,9 +31,23 @@ class CMap extends Component {
   render() {
     return ( 
       <div className="content">
-        <p>Searcher of Bike Station's</p>
-        <Form method = { this.getInfo } />  
-        <Points points = { this.state.Point } /> 
+        <p>Bike station's search engine</p>
+        <div className="Flex">
+          <div className="Map">
+            <Form method = { this.getInfo } />  
+            <Points points = { this.state.Point } /> 
+          </div>
+          <div className="Description">
+            <div className="block1">
+            lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10
+            </div>
+            <div className="block2">
+              lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10
+              lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10
+              lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10
+            </div>
+          </div>
+          </div>
       </div>
     );
   }
