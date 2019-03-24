@@ -27,15 +27,27 @@
     font-size: 16px;
 }
 
+    a {
+    color: white;
+    padding-top: 50px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+    a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
 .Description {
     margin: 10px;
+    margin-top: 60px;
     width: 30%;
+    text-align: justify;
 }
 
 .Description div {
     margin: 10px;
     font-size: 18px;
-    text-align: center;
 }
 
 .Flex {

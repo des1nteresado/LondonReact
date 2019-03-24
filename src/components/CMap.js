@@ -1,6 +1,4 @@
-import React, {
-  Component
-} from 'react';
+import React, { Component } from 'react';
 import Form from "./Form";
 import Points from "./Points";
 import "./Points.css"
@@ -12,7 +10,13 @@ class CMap extends Component {
   state = {
     Point: []
   }
+
+  initialState = {
+    Point: []
+  }
+
   getInfo = (e) => {
+    this.setState(this.initialState);
     e.preventDefault();
     const formData = new FormData(e.target);
     fetch(`https://api.tfl.gov.uk/BikePoint/Search?query=${formData.get('name')}&app_id=${ID}&app_key=%${KEY}`).then((data) => {
@@ -26,12 +30,12 @@ class CMap extends Component {
         }))
       })
     })
-
   }
+  
   render() {
     return ( 
       <div className="content">
-        <p>Bike station's search engine</p>
+        <p>The search of bikes stations</p>
         <div className="Flex">
           <div className="Map">
             <Form method = { this.getInfo } />  
@@ -39,12 +43,10 @@ class CMap extends Component {
           </div>
           <div className="Description">
             <div className="block1">
-            lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10
+            At this page you can search for bike stations by their name. Bike point's name often contains information about the name of the street or nearby landmarks. Also every point has unique number and coordinates. 
             </div>
-            <div className="block2">
-              lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10
-              lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10
-              lorem10 lorem10 lorem10 lorem10 lorem10lorem10lorem10 lorem10 lorem10 lorem10
+            <div>
+            The search term e.g. "St. James".
             </div>
           </div>
           </div>

@@ -7,7 +7,7 @@ const Points = props => {
     console.log(props.points);
     return (
         <YMaps>
-            <Map width={'600px'} height={'100%'} defaultState={{ center: [51.507351, -0.127660], zoom: 11,  }} > {
+            <Map width={'100%'} height={'100%'} defaultState={{ center: [51.507351, -0.127660], zoom: 11  }} > {
                 props.points.map((point, index) => {
                     return (    
                         <Point key={index}
